@@ -5,8 +5,11 @@ import pygame
 pygame.init()
 
 # displaying a window of height
-# 500 and width 400
 pygame.display.set_mode((640, 360))
+
+Icon = pygame.image.load('assets/icon.jpg')
+pygame.display.set_caption("WorkOS")
+pygame.display.set_icon(Icon)
 
 # creating a bool value which checks
 # if game is running
