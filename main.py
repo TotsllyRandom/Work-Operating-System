@@ -1,28 +1,36 @@
-# import pygame package
+# import pygame module
 import pygame
 
 # initializing imported module
 pygame.init()
 
-# displaying a window of height
+# Displaying a window of height 
+# 500 and width 400
 pygame.display.set_mode((640, 360))
 
-Icon = pygame.image.load('assets/icon.jpg')
-pygame.display.set_caption("WorkOS")
+# Here we set name or title of our
+# pygame window
+pygame.display.set_caption('GeeksforGeeks')
+
+# Here we load the image we want to 
+# use
+Icon = pygame.image.load('gfglogo.png')
+
+# We use set_icon to set new icon
 pygame.display.set_icon(Icon)
 
-# creating a bool value which checks
-# if game is running
+# Creating a bool value which checks if 
+# game is running
 running = True
 
-# keep game running till running is true
+# Keep game running till running is true
 while running:
     
-    # Check for event if user has pushed
+    # Check for event if user has pushed 
     # any event in queue
     for event in pygame.event.get():
         
-        # if event is of type quit then 
-        # set running bool to false
+        # If event is of type quit then set 
+        # running bool to false
         if event.type == pygame.QUIT:
             running = False
