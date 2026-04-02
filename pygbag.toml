@@ -1,0 +1,5 @@
+[project]
+title = "WorkOS"
+
+[app]
+icon = "assets/icon.png"
